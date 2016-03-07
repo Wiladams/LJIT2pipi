@@ -4,6 +4,7 @@ package.path = package.path..";../?.lua"
 local ffi = require("ffi")
 local pipi_ffi = require("pipi_ffi")();
 local utils = require("utils")()
+local rand = math.random
 
 
 local function test_version()
@@ -14,3 +15,5 @@ end
 
 test_version();
 
+
+print(rand(), rand(), rand())

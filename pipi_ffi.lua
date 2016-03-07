@@ -2,11 +2,6 @@ local ffi = require("ffi")
 
 
 
-
-
---#include <pipi_types.h>
-
-
 ffi.cdef[[
 
 /* pipi_scan_t: this enum is a list of all possible scanning methods when

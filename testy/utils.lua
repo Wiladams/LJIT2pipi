@@ -2,7 +2,12 @@ local function printf(fmt, ...)
 	io.write(string.format(fmt, ...))
 end
 
+local function fprintf(f, fmt, ...)
+	io.write(string.format(fmt, ...));
+end
+
 local exports = {
+	fprintf = fprintf;
 	printf = printf;	
 }
 
